@@ -28,12 +28,28 @@ public class runMain {
 		ds_so_Nguyen.add(tam);
 		}
 		
-		
+		System.out.println("Danh sách vừa nhập: \n");
 		//b.In ra danh sách vừa nhập
 		for (int i = 0; i < ds_so_Nguyen.size();i++) {
-			
+			// Lấy giá trị phần tử ở vị trí thứ i, cất vào biến tạm
+			Integer tam = ds_so_Nguyen.get(i);
+			System.out.print(tam + " ");
 		}
 		
+		//c.Đếm số phần tử chẵn
+		int so_PT_chan = 0 ;
+		for (Integer x: ds_so_Nguyen) {
+			if (x % 2 == 0) {
+				so_PT_chan++;
+			}
+			
+		}
+		System.out.println("\nSố lượng phần tử chẵn có trong List: " + so_PT_chan);
+		int Tong = 0;
+		for (Integer x: ds_so_Nguyen) {
+			Tong = Tong + x;
+		}
+		System.out.println("Tổng các số có trong List là: " + Tong);
 
 	}
 
