@@ -34,7 +34,7 @@ public class Quan_li_san_pham {
 	public void Sap_xep_giam() {
 		for (int i = 0; i < ds.size() - 1; i++) {
 			for (int j = 0;j < ds.size() - i - 1; j++) {
-				if (ds.get(j).get(j).get_gia() < ds.get(j + 1).get_gia()) {
+				if (ds.get(j).get_gia() < ds.get(j + 1).get_gia()) {
 					San_Pham temp = ds.get(j);
                     ds.set(j, ds.get(j + 1));
                     ds.set(j + 1, temp);
