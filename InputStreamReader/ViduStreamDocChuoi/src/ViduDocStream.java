@@ -17,6 +17,9 @@ public class ViduDocStream {
 		//Đọc đữ liệu từ file và cất biến vào chuỗi
 		String line1 = buffReader.readLine();
 		System.out.print(line1);
+		String line2 = buffReader.readLine();
+		System.out.print(line2);
+		
 		
 
 	}
