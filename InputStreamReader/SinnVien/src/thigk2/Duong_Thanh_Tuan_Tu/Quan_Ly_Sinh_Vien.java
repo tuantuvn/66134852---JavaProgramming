@@ -23,7 +23,7 @@ public class Quan_Ly_Sinh_Vien{
               int namSinh = Integer.parseInt(arr[2]);
               String gioiTinh = arr[3];
 
-              SinhVien sv = new SinhVien(stt, gioiTinh, namSinh, gioiTinh);
+              SinhVien sv = new SinhVien(stt, ten, namSinh, gioiTinh);
               dsSinhVien.add(sv);
           }
 
