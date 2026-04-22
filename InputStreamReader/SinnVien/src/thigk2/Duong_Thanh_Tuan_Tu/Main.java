@@ -16,7 +16,8 @@ public class Main {
 		quanly.InDanhSach();
 		System.out.println("4.SINH VIÊN NỮ:");
 		quanly.inSVnu();
-		System.out.println("1.DANH SÁCH SINH VIÊN:");
+		System.out.println("5.SẮP XẾP THEO TÊN:");
+		quanly.Sapxeptheoten();
 	}
 
 }
