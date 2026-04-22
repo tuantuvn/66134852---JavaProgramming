@@ -16,7 +16,7 @@ public class Quan_Ly_Sinh_Vien{
           br.readLine(); // bỏ dòng tiêu đề
 
           while ((line = br.readLine()) != null) {
-              String[] arr = line.split(",");
+              String[] arr = line.split(";");
 
               String ma = arr[0];
               String ten = arr[1];
@@ -51,6 +51,7 @@ public class Quan_Ly_Sinh_Vien{
 			}
 		}
 	}
+	
 	
 	
 }
