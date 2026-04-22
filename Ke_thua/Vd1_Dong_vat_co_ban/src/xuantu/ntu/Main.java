@@ -3,7 +3,7 @@ package xuantu.ntu;
 public class Main {
 
 	public static void main(String[] args) {
-System.out.println("=== HỆ THỐNG QUẢN LÝ ĐỘNG VẬT ===\n");
+		System.out.println("=== HỆ THỐNG QUẢN LÝ ĐỘNG VẬT ===\n");
         
         ConCho cho1 = new ConCho("Lucky", 3, 15.5, "Husky", true);
         System.out.println("THÔNG TIN CHÓ:");
