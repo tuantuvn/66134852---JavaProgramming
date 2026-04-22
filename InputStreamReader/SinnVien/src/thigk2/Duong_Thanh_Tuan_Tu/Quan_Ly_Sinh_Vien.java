@@ -1,14 +1,56 @@
 package thigk2.Duong_Thanh_Tuan_Tu;
-
+import java.util.ArrayList;
+import java.io.*;
+import java.util.Collections;
+import java.util.Comparator;
 //Tạo lớp "Quản lý Sinh Viên" kế thừa từ lớp "SinhVien"
-public class Quan_Ly_Sinh_Vien extends SinhVien {
+public class Quan_Ly_Sinh_Vien{
+	
+	
+	public ArrayList<SinhVien> dsSinhVien = new ArrayList<SinhVien>();
+	public void DocFile() {
+		try {
+		  BufferedReader br = new BufferedReader(new FileReader("SinhVien.csv"));
+          String line;
 
-	public Quan_Ly_Sinh_Vien(int sTT, String ho_va_ten, int namSinh, String gioiTinh) {
-		super(sTT, ho_va_ten, namSinh, gioiTinh);
-		// TODO Auto-generated constructor stub
+          br.readLine(); // bỏ dòng tiêu đề
+
+          while ((line = br.readLine()) != null) {
+              String[] arr = line.split(",");
+
+              String ma = arr[0];
+              String ten = arr[1];
+              int namSinh = Integer.parseInt(arr[2]);
+              String gioiTinh = arr[3];
+
+              SinhVien sv = new SinhVien(namSinh, gioiTinh, namSinh, gioiTinh);
+              dsSinhVien.add(sv);
+          }
+
+          br.close();
+      } catch (IOException e) {
+          System.out.println("Lỗi đọc file!");
+      }
+		
+	}
+	//in ra danh sách sinh viên.
+	public void InDanhSach() {
+		for (SinhVien sv: dsSinhVien) {
+			System.out.println(sv.toString());
+		}
+			
+	}
+	public void inSoluonng() {
+		System.out.println("Số lượng sinh viên là: "+dsSinhVien.size());
+	}
+	//In sinh viên sinh 2006
+	public void inSV2006() {
+		for (SinhVien sv: dsSinhVien) {
+			if (sv.getNamSinh()==2006) {
+				System.out.println(sv);
+			}
+		}
 	}
 	
-
 	
-
 }
