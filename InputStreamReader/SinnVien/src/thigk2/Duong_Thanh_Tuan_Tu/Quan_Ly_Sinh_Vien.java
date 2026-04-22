@@ -51,7 +51,23 @@ public class Quan_Ly_Sinh_Vien{
 			}
 		}
 	}
-	
-	
+	//In ra danh sách sinh viên nữ
+	public void inSVnu() {
+		for (SinhVien sv : dsSinhVien) {
+			if (sv.getClass().equals("Nu")) {
+				 System.out.println(sv);
+			}
+		}
+	}
+	//Sắp xếp sinh viên theo tên
+	public void Sapxeptheoten() {
+		Collections.sort(dsSinhVien, new Comparator<SinhVien>(){
+			public int compare (SinhVien a, SinhVien b) {
+				return a.getHo_va_ten().compareToIgnoreCase(b.getHo_va_ten());
+			}
+		});
+		
+		InDanhSach();
+	}
 	
 }
