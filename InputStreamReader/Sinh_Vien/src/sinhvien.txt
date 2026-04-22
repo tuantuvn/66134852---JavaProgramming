@@ -1,0 +1,12 @@
+Viết chương trình đọc và hiển thị danh sách sinh viên từ file SV.sv
+
+
+1; Lê Văn Mỳ Tôm; 2006; Nam
+2; Phạm Mạnh Khoẻ; 2006; Nam
+3; Đinh Thị Nở; 2008; Nữ
+
+=>>1. Tổ chức class sinh viên với các thuộc tính tương ứng.
+=>>2. Khai báo một mảng các sinh viên
+		ArrayList<SinhVien> dsSinhVien= new ArrayList<SinhVien>();
+===>>3. Đọc file
+	Với mỗi dòng s ta làm		
