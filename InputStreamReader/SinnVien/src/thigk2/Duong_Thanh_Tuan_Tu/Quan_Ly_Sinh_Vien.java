@@ -10,20 +10,20 @@ public class Quan_Ly_Sinh_Vien{
 	public ArrayList<SinhVien> dsSinhVien = new ArrayList<SinhVien>();
 	public void DocFile() {
 		try {
-		  BufferedReader br = new BufferedReader(new FileReader("SinhVien.csv"));
+		  BufferedReader br = new BufferedReader(new FileReader("bin//SinhVien.csv"));
           String line;
 
           br.readLine(); // bỏ dòng tiêu đề
 
           while ((line = br.readLine()) != null) {
-              String[] arr = line.split(",");
+              String[] arr = line.split(";");
 
-              String ma = arr[0];
+              String stt = arr[0];
               String ten = arr[1];
               int namSinh = Integer.parseInt(arr[2]);
               String gioiTinh = arr[3];
 
-              SinhVien sv = new SinhVien(namSinh, gioiTinh, namSinh, gioiTinh);
+              SinhVien sv = new SinhVien(stt, gioiTinh, namSinh, gioiTinh);
               dsSinhVien.add(sv);
           }
 
@@ -54,7 +54,7 @@ public class Quan_Ly_Sinh_Vien{
 	//In ra danh sách sinh viên nữ
 	public void inSVnu() {
 		for (SinhVien sv : dsSinhVien) {
-			if (sv.getClass().equals("Nu")) {
+			if (sv.getGioiTinh().equals("Nu")) {
 				 System.out.println(sv);
 			}
 		}
