@@ -18,7 +18,7 @@ public class Quan_Ly_Sinh_Vien{
           while ((line = br.readLine()) != null) {
               String[] arr = line.split(";");
 
-              String stt = arr[0];
+              int stt = Integer.parseInt(arr[0]);
               String ten = arr[1];
               int namSinh = Integer.parseInt(arr[2]);
               String gioiTinh = arr[3];
