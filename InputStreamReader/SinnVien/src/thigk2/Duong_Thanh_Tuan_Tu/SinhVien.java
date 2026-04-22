@@ -1,10 +1,10 @@
 package thigk2.Duong_Thanh_Tuan_Tu;
 
 public class SinhVien {
-	private int STT;
-	private String Ho_va_ten;
-	private int NamSinh;
-	private String GioiTinh;
+	protected int STT;
+	protected String Ho_va_ten;
+	protected int NamSinh;
+	protected String GioiTinh;
 	public int getSTT() {
 		return STT;
 	}
