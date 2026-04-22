@@ -38,8 +38,7 @@ public class SinhVien {
 	}
 	@Override
 	public String toString() {
-		return "SinhVien [STT=" + STT + ", Ho_va_ten=" + Ho_va_ten + ", NamSinh=" + NamSinh + ", GioiTinh=" + GioiTinh
-				+ "]";
+		return String.format("%-7d %-25s %-15d %-10s", STT, Ho_va_ten, NamSinh, GioiTinh);
 	}
 	
 	
