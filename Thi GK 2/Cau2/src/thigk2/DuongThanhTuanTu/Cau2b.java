@@ -20,7 +20,15 @@ public class Cau2b {
 		System.out.println("Nhập thêm thông tin sinh viên mới");
 		System.out.print("Nhập mã số sinh viên: ");
 		int mssv = sc.nextInt();
-		System.out.print();
+		System.out.print("Nhập họ và tên: ");
+		String hovaten = sc.nextLine();
+		System.out.print("Nhập giới tính: ");
+		String gioitinh = sc.nextLine();
+		System.out.print("Nhập năm sinh: ");
+		int namsinh = sc.nextInt();
+		for (Cau2a sv:dssv) {
+			System.out.println(sv.toString());
+		}
 	}
 
 }

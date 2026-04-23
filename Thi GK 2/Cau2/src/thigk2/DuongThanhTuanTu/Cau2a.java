@@ -41,7 +41,7 @@ public class Cau2a {
 	//Xây dựng hàm toString
 	@Override
 	public String toString() {
-		return "Cau2a [MSSV=" + MSSV + ", HoVaten=" + HoVaten + ", GioiTinh=" + GioiTinh + ", NamSinh=" + NamSinh + "]";
+		return String.format("MSSV: %-10s | Họ tên: %-25s | Giới tính: %-5s | Năm sinh: %d", MSSV, HoVaten, GioiTinh, NamSinh);
 	}
 	
 	
