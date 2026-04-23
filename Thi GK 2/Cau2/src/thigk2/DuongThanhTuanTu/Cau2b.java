@@ -31,7 +31,18 @@ public class Cau2b {
 		int namsinh = sc.nextInt();
 		Cau2a svMoi = new Cau2a(mssv, hovaten, gioitinh, namsinh);
 		dssv.add(svMoi);
-		
+		//In ra lại màn hình danh sách sinh viên
+		for (Cau2a sv:dssv) {
+			System.out.println(sv.toString());
+		}
+		sc.close();
+		System.out.println("\nDanh sách sinh viên lớn hơn 20 tuổi:");
+		int namHienTai = 2025;
+		for (Cau2a sv : dssv) {
+		    if (namHienTai - sv.getNamSinh() > 20) {
+		        System.out.println(sv.toString());
+		    }
+		}
 	}
 
 }
