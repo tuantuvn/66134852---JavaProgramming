@@ -11,6 +11,9 @@ public class Cau2b {
 		Cau2a sv2 = new Cau2a(6623, "Nguyễn Văn Nam", "Nam", 2002);
 		Cau2a sv3 = new Cau2a(6612, "Trần Đức Chiến", "Nam", 2003);
 		
+		dssv.add(sv1);
+        dssv.add(sv2);
+        dssv.add(sv3);
 		//In ra danh sách sinh viên mới vừa thêm
 		for (Cau2a sv:dssv) {
 			System.out.println(sv.toString());
@@ -26,9 +29,9 @@ public class Cau2b {
 		String gioitinh = sc.nextLine();
 		System.out.print("Nhập năm sinh: ");
 		int namsinh = sc.nextInt();
-		for (Cau2a sv:dssv) {
-			System.out.println(sv.toString());
-		}
+		Cau2a svMoi = new Cau2a(mssv, hovaten, gioitinh, namsinh);
+		dssv.add(svMoi);
+		
 	}
 
 }
