@@ -9,6 +9,7 @@ public class Cau1 {
 		double chieucao = sc.nextDouble();
 		System.out.print("Nhập thông tin cân nặng (kg): ");
 		double cannang = sc.nextDouble();
+		//Tính BMI
 		double BMI = (cannang)/(chieucao*chieucao);
 		System.out.println("Chỉ số BMI của bạn là: "+BMI);
 		
